@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Портфолио Ильяса Темербаева — веб-разработка, программирование, цифровые проекты.">
+<title>Проекты — Ilyas Temerbaev</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <a class="logo" href="index.html">IL<span>YAS.</span></a>
+    <button class="menu-btn" aria-label="Открыть меню">☰</button>
+    <nav class="nav-links">
+      <a href="index.html">Главная</a>
+      <a href="about.html">Обо мне</a>
+      <a class="active" href="projects.html">Проекты</a>
+      <a href="skills.html">Навыки</a>
+      <a href="contact.html">Контакты</a>
+      <a class="btn small" href="contact.html">Связаться</a>
+    </nav>
+  </div>
+</header>
+
+
+<main>
+<section class="page-hero">
+ <div class="container reveal"><div class="eyebrow">Selected work</div><h1>Проекты</h1><p class="lead">Учебные, коммерческие и концептуальные проекты, в которых соединяются разработка и прикладная задача.</p></div>
+</section>
+<section class="section">
+ <div class="container">
+  <div class="filters reveal">
+   <button class="filter active" data-filter="all">Все</button>
+   <button class="filter" data-filter="web">Web</button>
+   <button class="filter" data-filter="software">Software</button>
+   <button class="filter" data-filter="business">Business</button>
+  </div>
+  <div class="project-grid">
+   <article class="card project reveal" data-category="software"><div class="project-img"><img src="assets/foodik.svg" alt="Проект Foodik"></div><div class="project-body"><h3>Foodik — ARM магазина</h3><p>C# WinForms-приложение с MySQL для работы с товарами, клиентами, категориями и заказами.</p><div class="tags"><span class="tag">C#</span><span class="tag">MySQL</span><span class="tag">WinForms</span></div><button class="btn small" style="margin-top:18px" data-title="Foodik" data-modal="ARM-система продуктового магазина: каталог, категории, клиенты и заказы. Проект показывает работу с интерфейсом Windows Forms и реляционной базой данных.">О проекте</button></div></article>
+   <article class="card project reveal" data-category="web business"><div class="project-img"><img src="assets/qrguard.svg" alt="Проект QR-Guard"></div><div class="project-body"><h3>QR-Guard</h3><p>Концепция защиты карточек товаров через уникальные QR-сертификаты и цифровую идентификацию.</p><div class="tags"><span class="tag">JavaScript</span><span class="tag">SHA-256</span><span class="tag">UX</span></div><button class="btn small" style="margin-top:18px" data-title="QR-Guard" data-modal="Прототип цифровой сертификации: генерация идентификатора, сертификата и QR-кода. Идея ориентирована на продавцов маркетплейсов.">О проекте</button></div></article>
+   <article class="card project reveal" data-category="web"><div class="project-img"><img src="assets/dacha.svg" alt="Проект Дача"></div><div class="project-body"><h3>ДАЧА — ресторан</h3><p>Адаптивный сайт семейного ресторана с категориями меню и скрытой административной частью.</p><div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div><button class="btn small" style="margin-top:18px" data-title="ДАЧА" data-modal="Сайт ресторана с адаптивным меню, категориями, карточками блюд и локальным управлением контентом через JavaScript.">О проекте</button></div></article>
+   <article class="card project reveal" data-category="business web"><div class="project-img"><img src="assets/zapchasti.svg" alt="Zapchasti.pvl"></div><div class="project-body"><h3>Zapchasti.pvl</h3><p>Идея сервиса поиска и доставки автозапчастей для клиентов Павлодарской области.</p><div class="tags"><span class="tag">Business</span><span class="tag">Web</span><span class="tag">Local</span></div><button class="btn small" style="margin-top:18px" data-title="Zapchasti.pvl" data-modal="Предпринимательский проект, объединяющий поиск запчастей, работу с поставщиками и локальную доставку.">О проекте</button></div></article>
+   <article class="card project reveal" data-category="web"><div class="project-img"><img src="assets/invite.svg" alt="Проект BIRGE"></div><div class="project-body"><h3>BIRGE — event web</h3><p>Концепция современного сайта-приглашения с анимацией, таймером и блоками события.</p><div class="tags"><span class="tag">Web Design</span><span class="tag">JS</span><span class="tag">Animation</span></div><button class="btn small" style="margin-top:18px" data-title="BIRGE" data-modal="Концепция продукта для создания современных цифровых приглашений на свадьбы и другие события.">О проекте</button></div></article>
+   <article class="card project reveal" data-category="business"><div class="project-img"><img src="assets/procurement.svg" alt="Автоматизация закупок"></div><div class="project-body"><h3>Procurement workflow</h3><p>Практический опыт работы с закупками, расчётами, Excel, 1C и электронными закупочными площадками.</p><div class="tags"><span class="tag">Excel</span><span class="tag">1C</span><span class="tag">Procurement</span></div><button class="btn small" style="margin-top:18px" data-title="Procurement workflow" data-modal="Работа с закупочными задачами: анализ требований, расчёт себестоимости, работа с поставщиками и подготовка документации.">О проекте</button></div></article>
+  </div>
+ </div>
+</section>
+</main>
+<div class="modal" id="projectModal"><div class="modal-box"><button class="close" aria-label="Закрыть">×</button><div class="eyebrow">Project details</div><h2 id="modalTitle">Проект</h2><p class="lead" id="modalText" style="margin-top:16px"></p></div></div>
+
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>© 2026 Ilyas Temerbaev. Personal portfolio.</div>
+    <div class="footer-links">
+      <a href="https://github.com/ilias0103" target="_blank" rel="noopener">GitHub ↗</a>
+      <a href="contact.html">Контакты</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
